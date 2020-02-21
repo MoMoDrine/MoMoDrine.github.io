@@ -69,13 +69,10 @@
     mounted () {
       this.$ajax.get('/static/data' + '.json')
         .then(response => {
-          response.data.forEach((item,index)=>{
-
-
+          response.data.forEach((item, index) => {
 
             this.tableData.push(item)
           })
-
 
           console.log(this.tableData)
         })
